@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!-- Copyright 2014 Info Tech, Inc. Provided under the MIT license. See LICENSE file for details. -->
+
+<html>
+<head>
+    <title>Key Management</title>
+    <script src="keystore.js"></script>
+    <script src="keymanagement.js"></script>
+</head>
+
+<body>
+    <h1>Key Management</h1>
+
+    <section id="create-keys">
+        <h1>Create New Key Pair</h1>
+        Key Name: <input type="text" id="created-key-name"/><br/>
+        Purpose:
+            <input type="radio" name="created-key-type" value="Signing">Signing</input>
+            <input type="radio" name="created-key-type" value="Encrypting">Encrypting</input>
+            <br/>
+        <button id="create-key">Create Key Pair</button>
+    </section>
+
+    <section id="list-keys">
+        <h1>Stored Keys</h1>
+        <ul id="key-list">
+        </ul>
+    </section>
+</body>
+</html>
